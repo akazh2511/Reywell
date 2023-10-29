@@ -1,0 +1,79 @@
+#about {
+  margin-top: 100px;
+}
+.about-box {
+  width: 97vw;
+  height: 87vh;
+  border-color: #0f2522;
+  border-style: solid;
+  border-width: 10px;
+  /* padding: 40px; */
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: 20px;
+}
+.about-detail-box {
+  background-color: #0f2522;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.about-heading {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.about-content {
+  color: white;
+  padding: 30px;
+  /* padding-top: 80px; */
+  line-height: 1.7;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.about-image {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../pic/owner.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.about-image-size {
+  width: "40px";
+  height: "80vh";
+}
+@media screen and (max-width: 680px) {
+  .about-box {
+    width: 90%;
+    height: 100%;
+    border-color: #0f2522;
+    border-style: solid;
+    border-width: 10px;
+
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-detail-box {
+    background-color: #0f2522;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .about-content {
+    color: white;
+    padding: px;
+    /* padding-top: 80px; */
+    line-height: 1.7;
+    font-size: 12px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .about-image {
+    width: 100%;
+    height: 80vh;
+    background-image: url("../pic/owner.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

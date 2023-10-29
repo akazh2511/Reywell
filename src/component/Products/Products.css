@@ -1,0 +1,118 @@
+#product {
+  margin-top: 100px;
+}
+.product-box {
+  width: 97vw;
+  height: 94vh;
+  border-color: #0f2522;
+  border-style: solid;
+  border-width: 10px;
+  /* padding: 40px; */
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.product-detail-box {
+  background-color: #0f2522;
+  width: 110%;
+  height: 100%;
+  z-index: 1;
+}
+.product-heading {
+  color: white;
+  padding: 20px;
+}
+.product-content {
+  color: white;
+  padding: 30px;
+  padding-top: 80px;
+}
+.product-cards {
+  background-color: #e1dfd8;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  padding: 10px;
+}
+.product-card {
+  background-color: #f9f9f3;
+  color: white;
+  padding: 1rem;
+  height: 80%;
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+  z-index: 2;
+}
+/* .product-card:hover {
+  box-shadow: #f9f9f3 0px 0px 0px 3px, #0f2522 0px 0px 0px 6px;
+} */
+.product-img {
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 5px;
+}
+
+.show-div {
+  background-color: #0f2522;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 1px;
+}
+.flex-prop {
+  display: grid;
+  grid-template-rows: 80% 20%;
+}
+/* .product-card:hover .product-img {
+  transform: scale(1.3) rotate(360deg);
+}
+.product-card:hover .show-div {
+  transform: scale(1.3) rotate(360deg);
+} */
+/* ipad view */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #product {
+    margin-bottom: 100px;
+  }
+  .product-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-box {
+    width: 97vw;
+    height: 136.5vh;
+    border-color: #0f2522;
+    border-style: solid;
+    border-width: 10px;
+    /* padding: 40px; */
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+}
+/* mobile view -----------------------------------------------------------------------------------------*/
+@media (max-width: 480px) {
+  .product-box {
+    width: 90%;
+    height: 100%;
+    border-color: #0f2522;
+    border-style: solid;
+    border-width: 10px;
+
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-detail-box {
+    background-color: #0f2522;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .product-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
